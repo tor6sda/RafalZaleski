@@ -1,4 +1,4 @@
-package util;
+import util.DatabaseConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,7 +8,7 @@ public class przyklad4 {
     public static void main(String[] args) {
         StringBuilder stringBuilder = new StringBuilder("?");
         String questionMark =",?";
-        int tablica[] = new int[]{1,3,2};
+        int tablica[] = new int[]{1,3,5};
 
         for (int i = 1; i<tablica.length; i++){
             stringBuilder.append(questionMark);
