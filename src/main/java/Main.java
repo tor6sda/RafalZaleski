@@ -15,7 +15,7 @@ public class Main {
 //                System.out.println("Country ID: " + resultSet.getInt("CO_ID"));
 //                System.out.println("Country Name: " + resultSet.getString("CO_NAME"));
 //                System.out.println("Country Alias: " + resultSet.getString("CO_ALIAS"));
-                System.out.println("Imię: " + resultSet.getString("USR_FIRSTNAME"));
+                System.out.print("Imię: " + resultSet.getString("USR_FIRSTNAME") + " ");
                 System.out.println("Nazwisko: " + resultSet.getString("USR_LASTNAME"));
             }
         } catch (SQLException e) {
