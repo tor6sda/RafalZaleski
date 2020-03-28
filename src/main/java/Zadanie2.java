@@ -1,4 +1,4 @@
-package util;
+import util.DatabaseConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,7 +14,7 @@ public class Zadanie2 {
             stringBuilder.append(questionMark);
         }
 
-        String query = "UPDATE product" +
+        String query = "UPDATE product " +
                 "SET PRO_DESCRIPTION=CONCAT(PRO_DESCRIPTION, ?) " +
                 "Where pro_id in (" + stringBuilder.toString() + ")";
 
